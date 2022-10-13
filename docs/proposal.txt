@@ -1,0 +1,8 @@
+Idea 1: 
+Our first web application idea is an application for swapping clothes using a matching algorithm.
+Users can post clothes/accessories that they don't like anymore and can also see a feed of other users' clothes.
+There would be a like and unlike feature, where after an action prompts another piece of clothing/accessory. 
+If two users like each other's clothing, it is a match and the two can start communicating/exchange the items.
+For this appliaction we plan on making it progressive and implementing a user login using third-party auth. 
+We've looked into the Tinder API and Google Maps API to develop the matching feature. 
+For deployment it's still preliminary but we are contemplating using one of Heroku, Expo, or AWS.
