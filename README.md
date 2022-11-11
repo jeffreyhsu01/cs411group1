@@ -1,3 +1,6 @@
 # cs411group1
 
-https://www.veed.io/view/d5292169-95cc-4e0b-ac1c-7868efa7fde0?source=compressor-sharing
+
+
+https://user-images.githubusercontent.com/70560542/201360204-53f52c11-53e5-4409-b215-9020158d44d7.mp4
+
