@@ -28,11 +28,6 @@ yarn run build then server -s build
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Deploy
-
-Merge your code into branch "main" and create a pull request or merge into branch "prod".
-# 411tester
-
 
 https://user-images.githubusercontent.com/70560542/201361472-55373f65-591f-4935-9f5e-be90f6253e18.mp4
 
