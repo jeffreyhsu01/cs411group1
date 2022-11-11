@@ -1,0 +1,17 @@
+.mapboxgl-popup-content {
+    color: "#355598";
+    border-start-end-radius: 10;
+    padding: 0;
+}
+
+.mapboxgl-popup-content div {
+    background-color: "#355598";
+    border-radius: 20;
+    padding: 0;
+}
+
+.div {
+    background-color: "#355598";
+    border-radius: 20;
+    padding: 0;
+}

@@ -1,38 +1,73 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+    "name": "freelance-beach-cleanup",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@emotion/react": "^11.8.1",
+        "@emotion/styled": "^11.8.1",
+        "@material-ui/core": "^4.12.4",
+        "@mui/icons-material": "^5.5.1",
+        "@mui/material": "^5.4.4",
+        "@testing-library/jest-dom": "^5.16.2",
+        "@testing-library/react": "^11.2.7",
+        "@testing-library/user-event": "^12.8.3",
+        "firebase": "^9.6.7",
+        "html2canvas": "^1.4.1",
+        "jspdf": "^2.5.1",
+        "mapbox-gl": "^2.8.0",
+        "react": "^18.0.0",
+        "react-confetti": "^6.0.1",
+        "react-dom": "^18.0.0",
+        "react-map-gl": "^7.0.10",
+        "react-popup": "^0.11.0",
+        "react-router-dom": "^6.2.2",
+        "react-scripts": "5.0.0",
+        "serve": "^13.0.2",
+        "web-vitals": "^0.2.4",
+        "webpack": "^5.72.0",
+        "webpack-cli": "^4.9.2",
+        "workbox-background-sync": "^5.1.4",
+        "workbox-broadcast-update": "^5.1.4",
+        "workbox-cacheable-response": "^5.1.4",
+        "workbox-core": "^5.1.4",
+        "workbox-expiration": "^5.1.4",
+        "workbox-google-analytics": "^5.1.4",
+        "workbox-navigation-preload": "^5.1.4",
+        "workbox-precaching": "^5.1.4",
+        "workbox-range-requests": "^5.1.4",
+        "workbox-routing": "^5.1.4",
+        "workbox-strategies": "^5.1.4",
+        "workbox-streams": "^5.1.4"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not ie 11",
+            "not op_mini all",
+            "not chrome < 51",
+            "not safari < 10"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "firebase-server": "^1.1.0",
+        "worker-loader": "^3.0.8"
+    }
 }
