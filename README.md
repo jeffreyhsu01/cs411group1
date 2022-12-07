@@ -7,14 +7,15 @@ Our project is a web, iOS, and Android app that aims to:
 ## Running the code:
 
 ### Installation
-In freelance-beach-cleanup/ run:
+Run the following:
+
 ```bash
 npm install
 ```
 
 ### Getting Started
 
-Run the development server in freelance-beach-cleanup/:
+Run the development server:
 
 ```bash
 npm run start
