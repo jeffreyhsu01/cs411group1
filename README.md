@@ -1,4 +1,4 @@
-# [Coast Sweep](https://freelance-beach-cleanup.web.app/) 🏖️
+# [Coast Sweep] 🏖️
 
 Our project is a web, iOS, and Android app that aims to:  
 1. Provide opportunities for volunteers to protect our beaches and the environment!
