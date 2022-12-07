@@ -1,8 +1,9 @@
 # [Coast Sweep](https://freelance-beach-cleanup.web.app/) 🏖️
 
 Our project is a web, iOS, and Android app that aims to:  
-1. provide opportunities for volunteers to protect the beach, ocean, and the environment!
-2. allow individuals to gain service hours automatically!
+1. Provide opportunities for volunteers to protect our beaches and the environment!
+2. These heroes can automatically earn service hours for their work.
+3. Provide a way for everyone to do good in their communities. 
 
 ## Running the code:
 
