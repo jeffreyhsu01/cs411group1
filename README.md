@@ -8,7 +8,7 @@ Our project is a web, iOS, and Android app that aims to:
 ## Running the code:
 
 ### Installation
-Run the following:
+Run the following in my-app/:
 
 ```bash
 npm install
