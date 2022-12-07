@@ -28,19 +28,6 @@
                     ]
                 },
                 // Color circles by ethnicity, using a `match` expression.
-                'circle-color': [
-                    'match',
-                    ['get', 'ethnicity'],
-                    'White',
-                    '#fbb03b',
-                    'Black',
-                    '#223b53',
-                    'Hispanic',
-                    '#e55e5e',
-                    'Asian',
-                    '#3bb2d0',
-                    /* other */ '#ccc'
-                ]
             }
         });
     });

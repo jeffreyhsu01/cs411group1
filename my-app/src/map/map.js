@@ -25,6 +25,10 @@ import {useNavigate} from 'react-router-dom';
 import DialogActions from '@mui/material/DialogActions';
 import DialogTitle from '@mui/material/DialogTitle';
 
+import { getAuth, signInWithPopup,  GoogleAuthProvider } from "firebase/auth";
+
+
+
 const TOKEN = 'pk.eyJ1IjoiY2hyaXN0aWFudG1hcmsiLCJhIjoiY2wwNXQ4aDM0MGNydzNpcWo4dWY5MGJkeSJ9.YTP08GGbccsCzCripTYICw'; // Set your mapbox token here
 
 export default function MapComponent() {
@@ -40,6 +44,9 @@ export default function MapComponent() {
   const { search } = window.location;
 
   // first thing that pops up when user first enter the app
+
+  
+  
   const [activeStep, setActiveStep] = React.useState(0);
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
