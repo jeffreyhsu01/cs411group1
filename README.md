@@ -18,10 +18,6 @@ Run the development server in freelance-beach-cleanup/:
 
 ```bash
 npm run start
-# or
-yarn start
-# or 
-yarn run build then server -s build
 ```
 
 ### Viewing the web page
