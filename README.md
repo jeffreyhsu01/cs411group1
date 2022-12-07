@@ -9,7 +9,7 @@ Our project is a web, iOS, and Android app that aims to:
 
 ### Installation
 Navigate to the following folder:
-```bash
+```
 my-app/
 ```
 
