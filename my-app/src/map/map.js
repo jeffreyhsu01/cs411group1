@@ -43,6 +43,9 @@ export default function MapComponent() {
   const [userLocation, setUserLocation] = useState({});
   const { search } = window.location;
 
+  
+  
+  
   // first thing that pops up when user first enter the app
 
   
@@ -175,88 +178,7 @@ export default function MapComponent() {
   return (
       <div style={{maxHeight:'calc(100vh)'}}>
         {/* first thing that pops up when user first enter the app */}
-        <Dialog
-          open={openIntroPopup}
-          onClose={handleCloseIntroPopup}
-          aria-labelledby="alert-dialog-title"
-          aria-describedby="alert-dialog-description"
-          PaperProps={{style:{backgroundColor: "#355598", borderRadius: 20, maxWidth: 380} }}
-        >
-          {activeStep === 0 ?
-          <DialogContent>
-            <DialogContentText id="alert-dialog-description">
-              <Grid container spacing={2}>
-                <Grid item xs={11}>
-                  <h1 style={{color: '#FFF1CA', marginBottom:10, fontSize:30}} >Welcome to Coast Sweep!</h1>
-                </Grid>
-                <Grid item xs={1}>
-                </Grid>
-              </Grid>
-              <p style={{color: '#FFF1CA', marginBottom:30, fontSize:20}} >Your favorite beach cleaning tool.</p>
-              <h2 style={{color: '#FFF1CA'}} >Are you a new user?</h2>
-              <Button onClick={handleNext} style={{color: '#FFF1CA', marginBottom:20, fontSize:25, textTransform:'none'}} >Yes</Button>
-              <Button onClick={handleCloseIntroPopup} style={{color: '#FFF1CA', marginBottom:20, fontSize:25, textTransform:'none'}} >No</Button>
-            </DialogContentText>
-          </DialogContent>
-          : activeStep === 1 ?
-          <DialogContent>
-            <DialogContentText id="alert-dialog-description">
-              <h1 style={{color: '#FFF1CA', marginBottom:10}} >We can help you with all your beach cleaning needs.</h1>
-              <p style={{color: '#FFF1CA', marginBottom:20, fontSize:20}} >Help us help you help the environment.</p>
-              <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
-                <Grid container spacing={2}>
-                  <Grid item xs={3}>
-                  </Grid>
-                  <Grid item xs={9}>
-                    <Box style={{backgroundColor: '#ABBBDF', width:50, height:50, textAlign:'center', marginLeft: 70, marginTop: 40}} borderRadius="50%" > 
-                      <ArrowForwardIcon onClick={handleNext} style={{color: '#35559B', textAlign: 'center', marginBottom:10, fontSize:40, paddingTop:10}}></ArrowForwardIcon>
-                    </Box>
-                  </Grid>
-                </Grid>
-              </div>
-            </DialogContentText>
-          </DialogContent>
-          : activeStep === 2 ?
-          <DialogContent>
-            <DialogContentText id="alert-dialog-description">
-              <h1 style={{color: '#FFF1CA', marginBottom:10}} >Find a beach to get started!</h1>
-              <p style={{color: '#FFF1CA', marginBottom:20, fontSize:20}} >You can either search or swipe through the map!</p>
-              <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
-                <Grid container spacing={2}>
-                  <Grid item xs={3}>
-                  </Grid>
-                  <Grid item xs={9}>
-                    <Box style={{backgroundColor: '#ABBBDF', width:50, height:50, textAlign:'center', marginLeft: 70, marginTop: 40}} borderRadius="50%" > 
-                      <ArrowForwardIcon onClick={handleNext} style={{color: '#35559B', textAlign: 'center', marginBottom:10, fontSize:40, paddingTop:10}}></ArrowForwardIcon>
-                    </Box>
-                  </Grid>
-                </Grid>
-              </div>
-            </DialogContentText>
-          </DialogContent>
-          :
-          <DialogContent>
-            <DialogContentText id="alert-dialog-description">
-              <h1 style={{color: '#FFF1CA', marginBottom:10}} >Allow location access?</h1>
-              <p style={{color: '#FFF1CA', marginBottom:20, fontSize:20}} >Coast Sweep uses location services to credit cleaning hours, as well as to keep track of what trash is picked up where.</p>
-              <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
-                <Grid container spacing={2}>
-                  <Grid item xs={3}>
-                  </Grid>
-                  <Grid item xs={9}>
-                    <Box style={{backgroundColor: '#ABBBDF', width:50, height:50, textAlign:'center', marginLeft: 70, marginTop: 40}} borderRadius="50%" > 
-                    <ArrowForwardIcon onClick={handleCloseIntroPopup} style={{color: '#35559B', textAlign: 'center', marginBottom:10, fontSize:40, paddingTop:10}}></ArrowForwardIcon>
-                    </Box>
-                  </Grid>
-                </Grid>
-              </div>
-            </DialogContentText>
-          </DialogContent>
-          }
-        </Dialog>
-
-
-
+      
         {/* Map */}
         <Box sx={{ flexGrow: 1, height: '85px', bgcolor: "#355598" }} position="static" >
           <Toolbar disableGutters>
