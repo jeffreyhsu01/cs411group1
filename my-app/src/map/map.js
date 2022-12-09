@@ -21,6 +21,10 @@ import {useNavigate} from 'react-router-dom';
 import { GoogleLogin } from '@react-oauth/google';
 import { GoogleOAuthProvider } from '@react-oauth/google';
 
+import { getAuth, signInWithPopup,  GoogleAuthProvider } from "firebase/auth";
+
+
+
 const TOKEN = 'pk.eyJ1IjoiY2hyaXN0aWFudG1hcmsiLCJhIjoiY2wwNXQ4aDM0MGNydzNpcWo4dWY5MGJkeSJ9.YTP08GGbccsCzCripTYICw'; // Set your mapbox token here
 
 export default function MapComponent() {
@@ -40,10 +44,14 @@ export default function MapComponent() {
   
   
   // first thing that pops up when user first enter the app
+
+  
+  
   const [activeStep, setActiveStep] = React.useState(0);
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
   };
+  // check location
   const turnOnLocation = () => {
     if (navigator.geolocation) {
       alert('GeoLocation is Available!');
@@ -87,6 +95,7 @@ export default function MapComponent() {
         setCheck(false);
         handleClickOpen()
       } else {
+        navigate('/beach',{state:{ selectedBeach: beach }});
         setHere(false);
         setCheck(true);
         setStarted(false);
@@ -165,8 +174,9 @@ export default function MapComponent() {
   }
 
 
-  const loginButton = (    
-    <GoogleOAuthProvider clientId={process.env.REACT_APP_GOOGLE_CLIENTID}>
+  const loginButton = (   
+    //to get credentials working on google sign in 
+    <GoogleOAuthProvider clientId= "678239446717-7g874eqrqhqlv9pcdv4ck756vnq6ab3o.apps.googleusercontent.com">
       <GoogleLogin
         onSuccess={credentialResponse => {
         console.log(credentialResponse);

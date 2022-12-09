@@ -9,12 +9,14 @@ import './index.css';
 import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
+import Beach from "./map/beach";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
+        <Route path="beach" element={<Beach />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
