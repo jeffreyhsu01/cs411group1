@@ -36,8 +36,9 @@ export default function TrashForm(props) {
   return (
     <div>
         <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
-        <Box style={{backgroundColor: "#ABBBDF",paddingTop:10, paddingBottom:10, width:250, borderRadius:20}}>
-        </Box>
+            <Box style={{backgroundColor: "#ABBBDF",paddingTop:10, paddingBottom:10, width:250, borderRadius:20}}>
+                <h2>Total Count = {totalCount} </h2>
+            </Box>
         </div>
         <div style={{height:10}}></div>
         <div style={{textAlign:'center', backgroundColor:'#ABBBDF', borderRadius:40}}>
