@@ -10,7 +10,6 @@ import Map, {
 } from 'react-map-gl';
 import firebase from '../firebase/firebase';
 import Button from '@mui/material/Button';
-import { Link } from 'react-router-dom';
 import Search from './search.js';
 import '../map/map.css'
 import Box from '@mui/material/Box';
@@ -18,24 +17,22 @@ import Toolbar from '@mui/material/Toolbar';
 import BottomNavbar from '../bottomNavbar.js';
 import Dialog from '@mui/material/Dialog';
 import DialogContent from '@mui/material/DialogContent';
-import DialogContentText from '@mui/material/DialogContentText';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import Grid from '@mui/material/Grid';
 import {useNavigate} from 'react-router-dom';
-import DialogActions from '@mui/material/DialogActions';
-import DialogTitle from '@mui/material/DialogTitle';
+import { GoogleLogin } from '@react-oauth/google';
+import { GoogleOAuthProvider } from '@react-oauth/google';
 
 const TOKEN = 'pk.eyJ1IjoiY2hyaXN0aWFudG1hcmsiLCJhIjoiY2wwNXQ4aDM0MGNydzNpcWo4dWY5MGJkeSJ9.YTP08GGbccsCzCripTYICw'; // Set your mapbox token here
 
 export default function MapComponent() {
-  const [openIntroPopup, setOpenIntroPopup] = useState(true);
-  const handleCloseIntroPopup = () => {
-    turnOnLocation()
-    setOpenIntroPopup(false);
-  };
+  // const [openIntroPopup, setOpenIntroPopup] = useState(true);
+  // const handleCloseIntroPopup = () => {
+  //   turnOnLocation()
+  //   setOpenIntroPopup(false);
+  // };
   const [beachPopup, setBeachPopup] = useState(null);
   const [beaches, setBeaches] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [loggedIn, setLoggedin] = useState(false);
   const [userLocation, setUserLocation] = useState({});
   const { search } = window.location;
 
@@ -167,9 +164,24 @@ export default function MapComponent() {
     return "Loading..."
   }
 
+
+  const loginButton = (    
+    <GoogleOAuthProvider clientId={process.env.REACT_APP_GOOGLE_CLIENTID}>
+      <GoogleLogin
+        onSuccess={credentialResponse => {
+        console.log(credentialResponse);
+        setLoggedin(true)
+        }}
+        onError={() => {
+          console.log('Login Failed');
+        }}
+      />
+    </GoogleOAuthProvider>
+  )
   
   return (
       <div style={{maxHeight:'calc(100vh)'}}>
+        {console.log(process.env.REACT_APP_GOOGLE_CLIENTID)}
         {/* first thing that pops up when user first enter the app */}
       
         {/* Map */}
@@ -192,6 +204,7 @@ export default function MapComponent() {
                   ))}
                 </ul>
               }
+              {!loggedIn ? loginButton : <h3 style={{paddingLeft: 100, color:"#ffffff"}}>Logged In!</h3>}
           </Toolbar>
         </Box>
         <Map
@@ -271,11 +284,6 @@ export default function MapComponent() {
                 </Dialog>
               </div>
             </div>
-
-
-
-
-
               </div>
             </Popup>
           )}
