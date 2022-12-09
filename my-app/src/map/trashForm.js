@@ -22,12 +22,14 @@ export default function TrashForm(props) {
         if (item.count > 0) {
             item.count-=1
             setTrashList([...trashList]);
+            let total = totalCount - 1
             setTotalCount(total)
         }
     }
     function addItem(item) {
         item.count+=1
         setTrashList([...trashList]);
+        let total = totalCount + 1
         setTotalCount(total)
     }
 
