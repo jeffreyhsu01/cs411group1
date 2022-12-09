@@ -87,6 +87,7 @@ export default function MapComponent() {
         setCheck(false);
         handleClickOpen()
       } else {
+        navigate('/beach',{state:{ selectedBeach: beach }});
         setHere(false);
         setCheck(true);
         setStarted(false);
