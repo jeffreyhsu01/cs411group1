@@ -51,6 +51,7 @@ export default function MapComponent() {
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
   };
+  // check location
   const turnOnLocation = () => {
     if (navigator.geolocation) {
       alert('GeoLocation is Available!');
