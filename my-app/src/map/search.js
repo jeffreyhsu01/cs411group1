@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
+// set searching
 function Search({ searchQuery, setSearchQuery }) {
     const classes = useStyles();
     return (
