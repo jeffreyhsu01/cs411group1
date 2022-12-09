@@ -1,7 +1,7 @@
 import React, { useState } from 'react';//
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import Can from '../map/Can.svg';
+import Can from '../src/map/Can.svg';
 
 export default function TrashForm(props) {
     const [trashList, , setTrashList] = useState([
