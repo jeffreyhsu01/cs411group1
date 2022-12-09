@@ -1,11 +1,11 @@
-import React, { useState } from 'react';//
+import React, { useState } from 'react';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Can from '../map/can.svg';
 import Button from '@mui/material/Button';
 
 export default function TrashForm(props) {
-    const [trashList, , setTrashList] = useState([
+    const [trashList, setTrashList] = useState([
         {"id":"can", "name": "Cans", "count": 0, "img": Can},
         {"id":"cigarette", "name": "Cigarettes", "count": 0, "img": Can},
         {"id":"needle", "name": "Medical", "count": 0, "img": Can},
