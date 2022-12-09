@@ -1,18 +1,19 @@
 import React, { useState } from 'react';//
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
+import Can from '../map/Can.svg';
 
 export default function TrashForm(props) {
     const [trashList, , setTrashList] = useState([
-        {"id":"can", "name": "Cans", "count": 0},
-        {"id":"cigarette", "name": "Cigarettes", "count": 0},
-        {"id":"needle", "name": "Medical", "count": 0},
-        {"id":"facemask", "name": "Face Masks", "count": 0},
-        {"id":"sodaBottle", "name": "Plastic Bottles", "count": 0},
-        {"id":"wineBottle", "name": "Glass Bottles", "count": 0},
-        {"id":"food", "name": "Food", "count": 0},
-        {"id":"plasticbag", "name": "To-Go Bags", "count": 0},
-        {"id":"nail", "name": "Nails", "count": 0},
+        {"id":"can", "name": "Cans", "count": 0, "img": Can},
+        {"id":"cigarette", "name": "Cigarettes", "count": 0, "img": Can},
+        {"id":"needle", "name": "Medical", "count": 0, "img": Can},
+        {"id":"facemask", "name": "Face Masks", "count": 0, "img": Can},
+        {"id":"sodaBottle", "name": "Plastic Bottles", "count": 0, "img": Can},
+        {"id":"wineBottle", "name": "Glass Bottles", "count": 0, "img": Can},
+        {"id":"food", "name": "Food", "count": 0, "img": Can},
+        {"id":"plasticbag", "name": "To-Go Bags", "count": 0, "img": Can},
+        {"id":"nail", "name": "Nails", "count": 0, "img": Can},
     ])
     props.getTrash(trashList);
 
