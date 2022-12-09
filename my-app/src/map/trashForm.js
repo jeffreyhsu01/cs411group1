@@ -1,7 +1,7 @@
 import React, { useState } from 'react';//
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import Can from '../src/map/Can.svg';
+import Can from '../src/map/can.svg';
 
 export default function TrashForm(props) {
     const [trashList, , setTrashList] = useState([
@@ -11,6 +11,9 @@ export default function TrashForm(props) {
         {"id":"facemask", "name": "Face Masks", "count": 0, "img": Can},
         {"id":"sodaBottle", "name": "Plastic Bottles", "count": 0, "img": Can},
         {"id":"wineBottle", "name": "Glass Bottles", "count": 0, "img": Can},
+        {"id":"food", "name": "Food", "count": 0, "img": Can},
+        {"id":"plasticbag", "name": "To-Go Bags", "count": 0, "img": Can},
+        {"id":"nail", "name": "Nails", "count": 0, "img": Can},
     ])
     props.getTrash(trashList);
 
