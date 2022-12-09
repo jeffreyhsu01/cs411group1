@@ -173,8 +173,9 @@ export default function MapComponent() {
   }
 
 
-  const loginButton = (    
-    <GoogleOAuthProvider clientId={process.env.REACT_APP_GOOGLE_CLIENTID}>
+  const loginButton = (   
+    //to get credentials working on google sign in 
+    <GoogleOAuthProvider clientId= "678239446717-7g874eqrqhqlv9pcdv4ck756vnq6ab3o.apps.googleusercontent.com">
       <GoogleLogin
         onSuccess={credentialResponse => {
         console.log(credentialResponse);
