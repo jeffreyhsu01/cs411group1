@@ -2,6 +2,7 @@ import React, { useState } from 'react';//
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Can from '../map/can.svg';
+import Button from '@mui/material/Button';
 
 export default function TrashForm(props) {
     const [trashList, , setTrashList] = useState([
@@ -16,6 +17,19 @@ export default function TrashForm(props) {
         {"id":"nail", "name": "Nails", "count": 0, "img": Can},
     ])
     props.getTrash(trashList);
+    const [totalCount, setTotalCount] = useState(0)
+    function removeItem(item) {
+        if (item.count > 0) {
+            item.count-=1
+            setTrashList([...trashList]);
+            setTotalCount(total)
+        }
+    }
+    function addItem(item) {
+        item.count+=1
+        setTrashList([...trashList]);
+        setTotalCount(total)
+    }
 
   return (
     <div>
@@ -34,7 +48,9 @@ export default function TrashForm(props) {
                         <img src={item.img} style={{width:100}} />
                         <div></div>
                         <div style={{textAlign:'center', display:'inline-flex'}}>
+                            <Button variant="outlined" style={{width:2}} onClick={() => {removeItem(item)}}></Button>
                             <p style={{margin:10}} >{item.count}</p>
+                            <Button variant="outlined" style={{width:2}} onClick={() => {addItem(item)}}></Button>
                         </div>
                     </Grid>
                 ))}
