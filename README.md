@@ -31,10 +31,6 @@ npm run start
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.**
 
-
-[![HERE](https://img.youtube.com/vi/oQeKaJjArJg/0.jpg)](https://www.youtube.com/watch?v=oQeKaJjArJg)
-## **Click the img above to watch our demo video!
-
 ![CS 411 Group 1 ](https://user-images.githubusercontent.com/70560542/206868545-0c6d4cf6-482e-44c8-b583-da94686be3c9.jpg)
 
 ![CS 411 Group 1  (1)](https://user-images.githubusercontent.com/70560542/206868566-e359fc47-2c5a-41be-9018-a884b7765ee5.jpg)
@@ -46,6 +42,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ![CS 411 Group 1  (4)](https://user-images.githubusercontent.com/70560542/206868581-3ad4b948-8092-4b36-991e-f1d157930ddd.jpg)
 
 ![CS 411 Group 1  (5)](https://user-images.githubusercontent.com/70560542/206868588-f3f74894-ef7d-43fd-8df5-a8a5013def08.jpg)
+
+[![HERE](https://img.youtube.com/vi/oQeKaJjArJg/0.jpg)](https://www.youtube.com/watch?v=oQeKaJjArJg)
+## **Click the img above to watch our demo video!
 
 
 
