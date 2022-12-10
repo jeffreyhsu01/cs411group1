@@ -32,6 +32,6 @@ npm run start
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.**
 
 
-https://user-images.githubusercontent.com/70560542/201361472-55373f65-591f-4935-9f5e-be90f6253e18.mp4
-## **note that this demo video is outdated
+[![HERE](https://img.youtube.com/vi/oQeKaJjArJg/0.jpg)](https://www.youtube.com/watch?v=oQeKaJjArJg)
+## **Click the img above to watch our demo video!
 
