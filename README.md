@@ -33,6 +33,5 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 
 [![HERE](https://img.youtube.com/vi/oQeKaJjArJg/0.jpg)](https://www.youtube.com/watch?v=oQeKaJjArJg)
-https://www.youtube.com/watch?v=oQeKaJjArJg
-## **note that this demo video is outdated
+## **Click the img above to watch our demo video!
 
